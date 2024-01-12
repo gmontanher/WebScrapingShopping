@@ -1,16 +1,18 @@
 import time
 import random
 import csv
-from scraping import scrap_google_shopping
+from scrap_links import scrap_google_shopping
+from scrap_wts import process_urls
 
 def main():
-    # ... Restante do código ...
 
     # Chama a função de scraping do Google Shopping
     scrap_google_shopping()
 
-    # Exibe a quantidade total de páginas puxadas
-    print(f"Finalizado")
+    print(f"Coleta de links finalizada, iniciando coleta de telefones")
+
+    #iniciar coleta de telefones
+    process_urls()
 
 if __name__ == "__main__":
     main()
