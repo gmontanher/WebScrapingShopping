@@ -9,7 +9,7 @@ def main():
     # Chama a função de scraping do Google Shopping
     scrap_google_shopping()
 
-    print(f"Coleta de links finalizada, iniciando coleta de telefones")
+    print(f"Coleta de links finalizada, iniciando coleta de telefones...")
 
     #iniciar coleta de telefones
     process_urls()

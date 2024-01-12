@@ -62,4 +62,4 @@ def process_urls(input_csv='links.csv', output_csv='links_numeros.csv'):
             csv_writer.writerow([url, ', '.join(phone_numbers)])
 
             # Exibir os números de telefone únicos encontrados para cada URL
-            print(f"Números de telefone únicos encontrados para {url}: {phone_numbers}")
+            print(f"{url}: {phone_numbers}")
